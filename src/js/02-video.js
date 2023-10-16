@@ -18,5 +18,5 @@ function onGetCurrentVideoTime(event) {
 };
 
 function onSetCurrentVideoTime() {
-  player.setCurrentTime(JSON.parse(localStorage.getItem(CURRENT_TIME_KEY)));
+  player.setCurrentTime(JSON.parse(localStorage.getItem(CURRENT_TIME_KEY)) || 0);
 };
